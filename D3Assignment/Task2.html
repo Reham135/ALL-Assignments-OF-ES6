@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>max min values using rest , spreed</title>
+</head>
+
+<body>
+
+    <script>
+        function minMaxFun(...arr) {
+            var arr = [Math.max(...arr),Math.min(...arr)];
+            var max=arr[0];
+            var min=arr[1];
+            return `max number is ${max} , min number is ${min}`;
+        }
+        console.log(minMaxFun(5,15,3,91,108,4,20));
+
+
+/////////////////another solution
+
+
+        function calc(...x){
+            var y=[Math.max(...x),Math.min(...x)]
+        return `max is ${y[0]} and min is ${y[1]}`
+        } 
+        console.log (calc(5,11,3,4,6))
+        
+    </script>
+</body>
+
+</html>
